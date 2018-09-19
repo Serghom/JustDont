@@ -7,9 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="кнопочный" Margin="374,124,343,275" Click="Button_Click"/>
-        <Button Content="без кнопок" Margin="374,149,343,250" Click="ButtonNo_Click"/>
-        <Button Content="пятнашки" Margin="374,202,343,197" Click="Piatnashki_Click"/>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="181*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="кнопочный" Margin="10,11,0,0" Click="Button_Click" Grid.ColumnSpan="2" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="75"/>
+        <Button Content="без кнопок" Margin="10,36,0,0" Click="ButtonNo_Click" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="75" Grid.ColumnSpan="2"/>
+        <Button Content="пятнашки" Margin="10,89,0,0" Click="Piatnashki_Click" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="75" Grid.ColumnSpan="2"/>
+
     </Grid>
 </Window>
