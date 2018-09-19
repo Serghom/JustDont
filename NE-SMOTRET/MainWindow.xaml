@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Button Content="кнопочный" Margin="374,124,343,275" Click="Button_Click"/>
+        <Button Content="без кнопок" Margin="374,149,343,250" Click="ButtonNo_Click"/>
+        <Button Content="пятнашки" Margin="374,202,343,197" Click="Piatnashki_Click"/>
         
     </Grid>
 </Window>

@@ -1,16 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace NE_SMOTRET
 {
@@ -22,6 +10,19 @@ namespace NE_SMOTRET
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            new Calcs.withButton().Show();
+        }
+        private void ButtonNo_Click(object sender, RoutedEventArgs e)
+        {
+            new Calcs.withoutButt().Show();
+        }
+        private void Piatnashki_Click(object sender, RoutedEventArgs e)
+        {
+            new Piatnashki.main().Show();
         }
     }
 }
